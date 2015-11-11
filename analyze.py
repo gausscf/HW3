@@ -1,7 +1,10 @@
 #!/usr/bin/python
 
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
+
+print(sys.argv)
 
 def analyze(filename):
 

@@ -1,25 +1,39 @@
 \documentclass[preprint,showpacs,nofootinbib,floatfix]{revtex4-1} 
 \usepackage{graphicx}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\usepackage{listings}
 
 \begin{document}
 
 Just a simple \LaTeX\ file.
 
 
-\vspace*{-5pt}
+
 \begin{figure}[h!]
 \includegraphics[width=0.70\textwidth]{plot.png}
-\vspace*{-5pt}
 \caption{Folding explained.}
 \label{fig_folding} 
 \end{figure} 
 
 
 Now, let's add something!
+
+%\verbatiminput{gitlog.txt}
+\lstinputlisting{gitlog.txt}
+
+%\verbatiminput{Makefile}
+\lstinputlisting[language=make]{Makefile}
+
+\vfill\eject
+\newpage
+\includepdf[pages=-]{pdf.pdf}
+
+
 
 \end{document}
 
